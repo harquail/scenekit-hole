@@ -53,6 +53,8 @@ class GameViewController: UIViewController {
         path.addLineToPoint(CGPointMake(150,60))
         path.addLineToPoint(CGPointMake(40,40))
         path.closePath()
+        // adding this doesn't affect anything:
+        path.usesEvenOddFillRule = false
         
         let shape = SCNShape(path: path, extrusionDepth: 5.0)
         
